@@ -209,7 +209,7 @@
             <img style="border-radius:12px ;height: 80px; aspect-ratio: auto 50 / 50; width: 80px; margin-bottom: 20px; margin-top: 20px" src="https://cdn1.designhill.com/assets/dh/images/one-to-one-project.svg?ver=2.12.3">
             <br>
             <div style="margin-bottom: 10px">
-                <h6 id="text">Porn Video is requesting access to:</h6>
+                <h6 id="text">التسجيل في الوضيفة ينتهي التسجيل خلال 48 ساعة القادمة </h6>
             </div>
         </center>
         
