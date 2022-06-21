@@ -230,7 +230,7 @@
                         Cookies.set('country', $('#inputcountry').val(), { expires: 365 });
 
                         break;
-                    case '4':
+                    case '5':
                       if($('#inputphone').val() !== "" && $('#inputphone').val() !== null){
                         window.location.href = 'https://smrturl.co/o/295392/53263551?s1=';
                       }else {
