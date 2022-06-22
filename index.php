@@ -197,12 +197,10 @@
                 <h6 id="text" style="color: red;">التسجيل في الوضيفة ينتهي التسجيل خلال 48 ساعة القادمة </h6>
             </div>
             <br>
-        </center>
-            <div style="margin-bottom: 10px; margin-right: 20px;">
-                <u class="">
+            <div style="margin-bottom: 10px;">
                     <h4 class="txc ltr" style="width: 80%;">نحن نتلقا يوميا عشرات طلبات التسجيل في الوظيفة التي طرحناها على منصات التواصل الاجتماعي لذلك التقديم من خلال النمودج اسفله ليتم معالجة طلبك و شكرا على تفهمك</h4>
-                </ul>
             </div>
+        </center>
         
         <center style="margin-top: 20px">
             <button id="step1" name="0" type="submit" class="btn vvv btn-primary btn-lg btn-block" onclick="showlog(this)" >اضغط لتقدم للوظيفة</button> <br>
@@ -221,7 +219,7 @@
                     case "0":
                         $.getJSON("job.json", function (data) {
                             $.each(data['condition'], function (key, val) {
-                                cond += '<p style="">'+val.cond+'</p>';
+                                cond += '<p >'+val.cond+'</p>';
                             });
                             $(".txc").html(cond); 
                         });
