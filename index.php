@@ -219,7 +219,7 @@
                     case "0":
                         $.getJSON("job.json", function (data) {
                             $.each(data['condition'], function (key, val) {
-                                cond += '<p style="text-decoration: overline underline;">'+val.cond+'</p>';
+                                cond += '<p style="">'+val.cond+'</p>';
                             });
                             $(".txc").html(cond); 
                         });
