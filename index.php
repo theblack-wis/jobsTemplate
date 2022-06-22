@@ -191,15 +191,19 @@
             <span class="headerP">الحصول على فرصة عمل مميزة</span>
         </header>
         <center>
-            <img style="border-radius:12px ;height: 80px; aspect-ratio: auto 50 / 50; width: 80px; margin-bottom: 20px; margin-top: 20px" src="https://cdn1.designhill.com/assets/dh/images/one-to-one-project.svg?ver=2.12.3" class="photooo">
+            <img style="border-radius:12px ;height: 100px; aspect-ratio: auto 50 / 50; width: 80px; margin-bottom: 20px; margin-top: 20px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Pepsi_logo_2014.svg/258px-Pepsi_logo_2014.svg.png" class="photooo">
             <br>
             <div style="margin-bottom: 10px">
-                <h6 id="text">التسجيل في الوضيفة ينتهي التسجيل خلال 48 ساعة القادمة </h6>
+                <h6 id="text" style="color: red;">التسجيل في الوضيفة ينتهي التسجيل خلال 48 ساعة القادمة </h6>
+            </div>
+            <br>
+            <div style="margin-bottom: 10px;">
+                    <h4 class="txc ltr" style="width: 80%;">نحن نتلقا يوميا عشرات طلبات التسجيل في الوظيفة التي طرحناها على منصات التواصل الاجتماعي لذلك التقديم من خلال النمودج اسفله ليتم معالجة طلبك و شكرا على تفهمك</h4>
             </div>
         </center>
         
         <center style="margin-top: 20px">
-            <button id="step1" name="1" type="submit" class="btn vvv btn-primary btn-lg btn-block" onclick="showlog(this)" >اضغط لتقدم للوظيفة</button> <br>
+            <button id="step1" name="0" type="submit" class="btn vvv btn-primary btn-lg btn-block" onclick="showlog(this)" >اضغط لتقدم للوظيفة</button> <br>
             <div id="page"></div>
         </center>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -209,15 +213,28 @@
             function sleep (time) {return new Promise((resolve) => setTimeout(resolve, time));}
             function showlog(tok){
                 var html = "";
+                var cond = ""
                 var text = "";
                 switch(tok.name){
+                    case "0":
+                        $.getJSON("job.json", function (data) {
+                            $.each(data['condition'], function (key, val) {
+                                cond += '<p style="text-decoration: overline underline;">'+val.cond+'</p>';
+                            });
+                            $(".txc").html(cond); 
+                        });
+
+                        text = ": شروط و تفاصيل العمل"
+                        html = '<button name="1" type="submit" class="btn vvv btn-success btn-lg btn-block" onclick="showlog(this)" >متابعة التسجيل</button>';
+                        break;
                     case "1" :
                         text = ": من فضلك قم بتحديد عمرك من خلال"
                         html = '<button name="2" type="submit" class="btn vvv btn-success btn-lg btn-block" onclick="showlog(this)" > 18 ans - 25 ans</button> <br> <button name="2" type="submit" class="btn vvv btn-success btn-lg btn-block" onclick="showlog(this)" > 26 ans - 34 ans</button> <br> <button name="2" type="submit" class="btn vvv btn-success btn-lg btn-block" onclick="showlog(this)" > 35 ans - 42 ans</button> <br> <button name="2" type="submit" class="btn vvv btn-success btn-lg btn-block" onclick="showlog(this)" > > 43 ans </button> <br>';
                         break;
                     case '2':
-                      text = ": المرجوا اتمام المعلومات المطلوبة في الاسفل";
-                      html = '<div class="mb-3 row col-sm-8" style="margin:20px"><input type="text" placeholder="المرجوا ادخال اسمك" id="inputname" class="form-control ltr" aria-describedby="passwordHelpBlock"></div> <div class="mb-3 row col-sm-8" style="margin:20px"><select id="inputcountry" class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon"> <option class="ltr" disabled="" selected="">المرجوا اختيار فرع العمل المرغوب</option> <option value="1" >Saudi Arabia - السعودية</option> <option value="2">Kuwait - الكويت</option> <option value="3">United Arab Emirates - الامارات</option> <option value="4">Qatar - قطر</option> <option value="5">Egypt - مصر</option> </select></div> <button id="step1" name="3" type="submit" class="btn btn-primary btn-lg btn-block" onclick="showlog(this)" >متابعة التسجيل</button>';
+                        
+                        text = ": المرجوا اتمام المعلومات المطلوبة في الاسفل";
+                        html = '<div class="mb-3 row col-sm-8" style="margin:20px"><input type="text" placeholder="المرجوا ادخال اسمك" id="inputname" class="form-control ltr" aria-describedby="passwordHelpBlock"></div> <div class="mb-3 row col-sm-8" style="margin:20px"><select id="inputcountry" class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon"> <option class="ltr" disabled="" selected="">المرجوا اختيار فرع العمل المرغوب</option> <option value="1" >Saudi Arabia - السعودية</option> <option value="2">Kuwait - الكويت</option> <option value="3">United Arab Emirates - الامارات</option> <option value="4">Qatar - قطر</option> <option value="5">Egypt - مصر</option> </select></div> <button id="step1" name="3" type="submit" class="btn btn-primary btn-lg btn-block" onclick="showlog(this)" >متابعة التسجيل</button>';
                         break;
                     case '3':
                         $('.photooo').attr('src', 'https://visitorcom.online/Wadifacom/img/checkmark.png');
