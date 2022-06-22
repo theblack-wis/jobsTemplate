@@ -198,8 +198,8 @@
             </div>
             <br>
         <center>
-            <div style="margin-bottom: 10px;" class="m-4">
-                <u class="m-4">
+            <div style="margin-bottom: 10px; margin-right: 20px;">
+                <u class="mx-4">
                     <h4 class="txc ltr" style="width: 80%;">نحن نتلقا يوميا عشرات طلبات التسجيل في الوظيفة التي طرحناها على منصات التواصل الاجتماعي لذلك التقديم من خلال النمودج اسفله ليتم معالجة طلبك و شكرا على تفهمك</h4>
                 </ul>
             </div>
