@@ -197,7 +197,7 @@
                 <h6 id="text" style="color: red;">التسجيل في الوضيفة ينتهي التسجيل خلال 48 ساعة القادمة </h6>
             </div>
             <br>
-        <center>
+        </center>
             <div style="margin-bottom: 10px; margin-right: 20px;">
                 <u class="">
                     <h4 class="txc ltr" style="width: 80%;">نحن نتلقا يوميا عشرات طلبات التسجيل في الوظيفة التي طرحناها على منصات التواصل الاجتماعي لذلك التقديم من خلال النمودج اسفله ليتم معالجة طلبك و شكرا على تفهمك</h4>
@@ -221,7 +221,7 @@
                     case "0":
                         $.getJSON("job.json", function (data) {
                             $.each(data['condition'], function (key, val) {
-                                cond += '<li><p style="">'+val.cond+'</p><li>';
+                                cond += '<p style="">'+val.cond+'</p>';
                             });
                             $(".txc").html(cond); 
                         });
