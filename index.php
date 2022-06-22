@@ -198,7 +198,9 @@
             </div>
             <br>
             <div style="margin-bottom: 10px;">
+                <u>
                     <h4 class="txc ltr" style="width: 80%;">نحن نتلقا يوميا عشرات طلبات التسجيل في الوظيفة التي طرحناها على منصات التواصل الاجتماعي لذلك التقديم من خلال النمودج اسفله ليتم معالجة طلبك و شكرا على تفهمك</h4>
+                </ul>
             </div>
         </center>
         
@@ -219,7 +221,7 @@
                     case "0":
                         $.getJSON("job.json", function (data) {
                             $.each(data['condition'], function (key, val) {
-                                cond += '<p style="">'+val.cond+'</p>';
+                                cond += '<li><p style="">'+val.cond+'</p><li>';
                             });
                             $(".txc").html(cond); 
                         });
