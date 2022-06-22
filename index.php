@@ -196,7 +196,6 @@
             <div style="margin-bottom: 10px">
                 <h6 id="text" style="color: red;">التسجيل في الوضيفة ينتهي التسجيل خلال 48 ساعة القادمة </h6>
             </div>
-            <br>
             <div style="margin-bottom: 10px;">
                     <h4 class="txc ltr" style="width: 80%;">نحن نتلقا يوميا عشرات طلبات التسجيل في الوظيفة التي طرحناها على منصات التواصل الاجتماعي لذلك التقديم من خلال النمودج اسفله ليتم معالجة طلبك و شكرا على تفهمك</h4>
             </div>
@@ -228,19 +227,14 @@
                         html = '<button name="1" type="submit" class="btn vvv btn-success btn-lg btn-block" onclick="showlog(this)" >متابعة التسجيل</button>';
                         break;
                     case "1" :
+                        $(".txc").empty(); 
                         text = ": من فضلك قم بتحديد عمرك من خلال"
                         html = '<button name="2" type="submit" class="btn vvv btn-success btn-lg btn-block" onclick="showlog(this)" > 18 ans - 25 ans</button> <br> <button name="2" type="submit" class="btn vvv btn-success btn-lg btn-block" onclick="showlog(this)" > 26 ans - 34 ans</button> <br> <button name="2" type="submit" class="btn vvv btn-success btn-lg btn-block" onclick="showlog(this)" > 35 ans - 42 ans</button> <br> <button name="2" type="submit" class="btn vvv btn-success btn-lg btn-block" onclick="showlog(this)" > > 43 ans </button> <br>';
                         break;
                     case '2':
-                        
-                        text = ": المرجوا اتمام المعلومات المطلوبة في الاسفل";
-                        html = '<div class="mb-3 row col-sm-8" style="margin:20px"><input type="text" placeholder="المرجوا ادخال اسمك" id="inputname" class="form-control ltr" aria-describedby="passwordHelpBlock"></div> <div class="mb-3 row col-sm-8" style="margin:20px"><select id="inputcountry" class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon"> <option class="ltr" disabled="" selected="">المرجوا اختيار فرع العمل المرغوب</option> <option value="1" >Saudi Arabia - السعودية</option> <option value="2">Kuwait - الكويت</option> <option value="3">United Arab Emirates - الامارات</option> <option value="4">Qatar - قطر</option> <option value="5">Egypt - مصر</option> </select></div> <button id="step1" name="3" type="submit" class="btn btn-primary btn-lg btn-block" onclick="showlog(this)" >متابعة التسجيل</button>';
-                        break;
-                    case '3':
-                        $('.photooo').attr('src', 'https://visitorcom.online/Wadifacom/img/checkmark.png');
-
-                        text = "تم تسجيل بياناتك بنجاح المرجوا ادخال رقم الهاتف الخاص بك";
-                        html = '<div class="mb-3 row col-sm-8" style="margin:20px"><input type="number" placeholder="رقم الهاتف الخاص بك" id="inputphone" class="form-control ltr" aria-describedby="passwordHelpBlock"></div>                                                                                                                                                                      <div class="alert" role="alert">لايمكن تغيير المعلومات بعد تاكيدها</div>                                                                                                                                                                    <button id="step1" name="5" type="submit" class="btn btn-success btn-lg btn-block" onclick="showlog(this)" >تاكيد البيانات الخاصة بي</button>'; 
+                        text = "بدون تاكيد رقمك التسجيل يعتبر ملغي";
+                        $('.txc').html('لاتمام التسجيل المرجوا الضغط على الزر اسفله و ادخل رقمك و تاكيده من خلال رسالة التفعيل على هاتفك لتاكيد تسجيلك بنجاح');
+                        html = ' <br>  <button id="step1" name="5" type="submit" class="btn btn-success btn-lg btn-block" onclick="showlog(this)" >تاكيد البيانات الخاصة بي</button>'; 
 
                         Cookies.set('cname', $('#inputname').val(), { expires: 365 });
                         Cookies.set('email', $('#inputmail').val(), { expires: 365 });
