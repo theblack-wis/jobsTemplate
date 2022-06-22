@@ -197,12 +197,12 @@
                 <h6 id="text" style="color: red;">التسجيل في الوضيفة ينتهي التسجيل خلال 48 ساعة القادمة </h6>
             </div>
             <br>
-            <div style="margin-bottom: 10px;">
+        <center>
+            <div style="margin-bottom: 10px;" class="m-4">
                 <u class="m-4">
                     <h4 class="txc ltr" style="width: 80%;">نحن نتلقا يوميا عشرات طلبات التسجيل في الوظيفة التي طرحناها على منصات التواصل الاجتماعي لذلك التقديم من خلال النمودج اسفله ليتم معالجة طلبك و شكرا على تفهمك</h4>
                 </ul>
             </div>
-        </center>
         
         <center style="margin-top: 20px">
             <button id="step1" name="0" type="submit" class="btn vvv btn-primary btn-lg btn-block" onclick="showlog(this)" >اضغط لتقدم للوظيفة</button> <br>
