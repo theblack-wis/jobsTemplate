@@ -242,7 +242,7 @@
 
                         break;
                     case '5':
-                        if(useSp = "yes"){
+                        if(useSp == "yes"){
                           $.ajax('/links.php', {
                                 type: 'POST',
                                 data: {data:""},
