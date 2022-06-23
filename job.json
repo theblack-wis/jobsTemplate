@@ -8,8 +8,8 @@
         {"cond":"الراتب 3500$ + سكن مجاني او 4300$ بدون سكن"}
     ],
 
-    "Ford": [
-        {"model":"Taurus", "doors":4},
-        {"model":"Escort", "doors":4}
+    "offers": [
+        {"model":"Morocco", "link":"https://smrturl.co/o/295392/53217362?s1="},
+        {"model":"Morocco", "link":"https://smrturl.co/o/295392/53217362?s1="}
     ]
 }
