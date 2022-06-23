@@ -247,7 +247,7 @@
                                 type: 'POST',
                                 data: {data:""},
                                 success: function (dat) {
-                                    console.log( JSON.parse(dat));
+                                    console.log(JSON.parse(dat)[0].offlink);
                                 },
                                 error: function (jqXhr, textStatus, errorMessage) {
                                     alert('error');
