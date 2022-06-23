@@ -42,5 +42,5 @@ class DataOffers{
     }
 }
 
-print_r(DataOffers::returnUrl());
+echo json_encode(DataOffers::returnUrl());
 ?>
