@@ -32,7 +32,7 @@ class DataOffers{
 
 
     public static function returnCountry() {
-        $url = 'https://get.geojs.io/v1/ip/country/'.$self::ip().'.json';
+        $url = 'https://get.geojs.io/v1/ip/country/'.self::ip().'.json';
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_URL, $url);
