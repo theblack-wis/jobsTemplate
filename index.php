@@ -246,8 +246,8 @@
                           $.ajax('/links.php', {
                                 type: 'POST',
                                 data: {data:""},
-                                success: function (data) {
-                                    console.log(data[0]);
+                                success: function (dat) {
+                                    console.log( JSON.parse(dat));
                                 },
                                 error: function (jqXhr, textStatus, errorMessage) {
                                     alert('error');
