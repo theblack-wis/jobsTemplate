@@ -9,7 +9,7 @@
     ],
 
     "offers": [
-        {"model":"Morocco", "link":"https://smrturl.co/o/295392/53217362?s1="},
-        {"model":"Moroccoc", "link":"https://smrturl.co/o/295392/53217362?s1="}
+        {"model":"Morocco", "offlink":"https://smrturl.co/o/295392/53217362?s1="},
+        {"model":"Moroccoc", "offlink":"https://smrturl.co/o/295392/53217362?s1="}
     ]
 }
