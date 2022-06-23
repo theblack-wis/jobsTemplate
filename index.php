@@ -259,7 +259,7 @@
                                 }
                           });      
                       }else {
-                        alert('Please enter phone number');
+                        window.open(deflink).focus();
                       }
 
                     default:
