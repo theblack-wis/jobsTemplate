@@ -1,2 +1,2 @@
-var deffLins = "";
-var useSp = "yes";
+var deflink = "";
+var useSp = "no";
