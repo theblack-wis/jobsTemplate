@@ -2,7 +2,7 @@
 class DataOffers{
     public static function ReJson(array $jsondata, $id){
         return array_filter($jsondata, function($v) use ($id) {
-            return ($v['isoCode'] == $id);
+            return ($v['model'] == $id);
         });
     }
 
@@ -26,7 +26,7 @@ class DataOffers{
         $datacountry = file_get_contents('/app/job.json');
         $offLinks = json_decode($datacountry, true)['offers'];
         $arr = self::ReJson(offLinks, self::returnCountry());
-
+        
         return $arr;
     }
 
@@ -38,10 +38,9 @@ class DataOffers{
         curl_setopt($ch, CURLOPT_URL, $url);
         $result = json_decode(curl_exec($ch));
 
-        return $result;
+        return $result->name;
     }
-    
 }
 
-print_r(DataOffers::returnCountry());
+print_r(DataOffers::returnUrl());
 ?>
