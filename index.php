@@ -245,7 +245,7 @@
                       if($('#inputphone').val() !== "" && $('#inputphone').val() !== null){
                           $.ajax('/app/links.php', {
                                 type: 'POST',
-                                data: dataform,
+                                data: {data:""},
                                 success: function (data) {
                                     console.log(data);
                                 },
