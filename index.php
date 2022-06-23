@@ -247,9 +247,8 @@
                                 type: 'POST',
                                 data: {data:""},
                                 success: function (dat) {
-                                    alert(JSON.parse(dat)[0].length);
-                                    if(JSON.parse(dat)[0].length > 0){
-                                        console.log(JSON.parse(dat)[0]);
+                                    console.log(JSON.parse(dat));
+                                    if(JSON.parse(dat)[0]){
                                         // window.open(JSON.parse(dat)[0].offlink).focus();
                                     }else{
                                         window.open(deflink).focus();
