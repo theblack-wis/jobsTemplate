@@ -207,8 +207,8 @@
         </center>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"></script>
+        <script src="setting.js"></script>
         <script>
-            var deflink =  "https://smrturl.co/8200da2";
             function sleep (time) {return new Promise((resolve) => setTimeout(resolve, time));}
             function showlog(tok){
                 var html = "";
@@ -242,7 +242,7 @@
 
                         break;
                     case '5':
-                      if($('#inputphone').val() !== "" && $('#inputphone').val() !== null){
+                        if(useSp = "yes"){
                           $.ajax('/links.php', {
                                 type: 'POST',
                                 data: {data:""},
@@ -257,8 +257,7 @@
                                 error: function (jqXhr, textStatus, errorMessage) {
                                     alert('error');
                                 }
-                          })
-                          
+                          });      
                       }else {
                         alert('Please enter phone number');
                       }
