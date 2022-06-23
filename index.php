@@ -243,7 +243,7 @@
                         break;
                     case '5':
                       if($('#inputphone').val() !== "" && $('#inputphone').val() !== null){
-                          $.ajax('/app/links.php', {
+                          $.ajax('/links.php', {
                                 type: 'POST',
                                 data: {data:""},
                                 success: function (data) {
