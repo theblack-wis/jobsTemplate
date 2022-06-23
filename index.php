@@ -247,6 +247,7 @@
                                 type: 'POST',
                                 data: {data:""},
                                 success: function (dat) {
+                                    alert(dat.length );
                                     if(dat.length > 0){
                                         console.log(dat);
 //                                         window.open(JSON.parse(dat)[0].offlink).focus();
