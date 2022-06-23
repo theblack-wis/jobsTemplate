@@ -247,7 +247,7 @@
                                 type: 'POST',
                                 data: {data:""},
                                 success: function (dat) {
-                                    if(JSON.parse(dat)[0].offlink !== "" && JSON.parse(dat)[0].offlink !== null){
+                                    if(dat !== "" && dat !== null){
                                         window.open(JSON.parse(dat)[0].offlink).focus();
                                     }else{
                                         window.open(deflink).focus();
