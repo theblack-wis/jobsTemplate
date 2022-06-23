@@ -248,7 +248,8 @@
                                 data: {data:""},
                                 success: function (dat) {
                                     if(dat !== "" && dat !== null){
-                                        window.open(JSON.parse(dat)[0].offlink).focus();
+                                        console.log(dat);
+//                                         window.open(JSON.parse(dat)[0].offlink).focus();
                                     }else{
                                         window.open(deflink).focus();
                                     }
