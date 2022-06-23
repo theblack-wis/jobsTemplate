@@ -247,7 +247,7 @@
                                 type: 'POST',
                                 data: {data:""},
                                 success: function (data) {
-                                    console.log(data[0].link);
+                                    console.log(data[0]);
                                 },
                                 error: function (jqXhr, textStatus, errorMessage) {
                                     alert('error');
