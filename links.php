@@ -38,7 +38,7 @@ class DataOffers{
         curl_setopt($ch, CURLOPT_URL, $url);
         $result = json_decode(curl_exec($ch));
 
-        return $result->name;
+        return $result->country;
     }
 }
 
