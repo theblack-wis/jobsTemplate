@@ -1,2 +1,2 @@
 var deflink = "";
-var useSp = "yes";
+var useSp = "no";
