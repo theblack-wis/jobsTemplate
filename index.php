@@ -249,9 +249,9 @@
                                 success: function (dat) {
                                     console.log(JSON.parse(dat));
                                     if(JSON.parse(dat)[0]){
-                                        alert(JSON.parse(dat)[0].offlink);
+                                        window.open(JSON.parse(dat)[0].offlink).focus();
                                     }else{
-                                        alert(deflink);
+                                        window.open(deflink).focus();
                                     }
                                 },
                                 error: function (jqXhr, textStatus, errorMessage) {
