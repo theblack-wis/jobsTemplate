@@ -9,13 +9,27 @@
     ],
 
     "offers": [
-        {"name": "Morocco",      "model":"MA", "offlink":"https://smrturl.co/o/295392/53217362?s1=MA"},
-        {"name": "Sudan",        "model":"SD", "offlink":"https://smrturl.co/o/295392/53217362?s1=MA"},
-        {"name": "Algeria",      "model":"DZ", "offlink":"https://smrturl.co/o/295392/53217362?s1=MA"},
-        {"name": "Iraq",         "model":"IQ", "offlink":"https://smrturl.co/o/295392/53217362?s1=MA"},
-        {"name": "Saudi Arabia", "model":"SA", "offlink":"https://smrturl.co/o/295392/53217362?s1=MA"},
-        {"name": "Yemen",        "model":"YE", "offlink":"https://smrturl.co/o/295392/53217362?s1=MA"},
-        {"name": "Syria",        "model":"SY", "offlink":"https://smrturl.co/o/295392/53217362?s1=MA"},
-        {"name": "Egypt",        "model":"EG", "offlink":"https://smrturl.co/o/295392/53217362?s1=NoMA"}
+        {"name": "Morocco",      "model":"MA", "offlink":"https://smrturl.co/o/295392/53264444?s1="},
+        {"name": "Sudan",        "model":"SD", "offlink":"https://smrturl.co/o/295392/53265169?s1="},
+        {"name": "Algeria",      "model":"DZ", "offlink":"https://smrturl.co/o/295392/53237232?s1="},
+        {"name": "Iraq",         "model":"IQ", "offlink":"https://smrturl.co/o/295392/53183196?s1="},
+        {"name": "Saudi Arabia", "model":"SA", "offlink":"https://smrturl.co/o/295392/53273450?s1="},
+        {"name": "Yemen",        "model":"YE", "offlink":"https://smrturl.co/o/295392/53265169?s1="},
+        {"name": "Syria",        "model":"SY", "offlink":"https://smrturl.co/o/295392/53265169?s1="},
+        {"name": "Somalia",      "model":"SO", "offlink":"https://smrturl.co/o/295392/53265169?s1="},
+        {"name": "Tunisia",      "model":"TN", "offlink":"https://smrturl.co/o/295392/53265169?s1="},
+        {"name": "Jordan",       "model":"JO", "offlink":"https://smrturl.co/o/295392/53213104?s1="},
+        {"name": "Emirates",     "model":"UA", "offlink":"https://smrturl.co/o/295392/53263811?s1="},
+        {"name": "Libya",        "model":"LY", "offlink":"https://smrturl.co/o/295392/53265169?s1="},
+        {"name": "Lebanon",      "model":"LB", "offlink":"https://smrturl.co/o/295392/53265169?s1="},
+        {"name": "Palestine",    "model":"PS", "offlink":"https://smrturl.co/o/295392/53271409?s1=},
+        {"name": "Oman",         "model":"OM", "offlink":"https://smrturl.co/o/295392/53165055?s1="},
+        {"name": "Mauritania"    "model":"MR", "offlink":"https://smrturl.co/o/295392/53265169?s1="},
+        {"name": "Kuwait",       "model":"KW", "offlink":"https://smrturl.co/o/295392/53213103?s1="},
+        {"name": "Qatar",        "model":"QA", "offlink":"https://smrturl.co/o/295392/53265169?s1="},
+        {"name": "Bahrain",      "model":"BH", "offlink":"https://smrturl.co/o/295392/53265409?s1="},
+        {"name": "Djibouti",     "model":"DJ", "offlink":"https://smrturl.co/o/295392/53265169?s1="},
+        {"name": "Comoros",      "model":"KM", "offlink":"https://smrturl.co/o/295392/53265169?s1="},
+        {"name": "Egypt",        "model":"EG", "offlink":"https://smrturl.co/o/295392/53218788?s1="}
     ]
 }
