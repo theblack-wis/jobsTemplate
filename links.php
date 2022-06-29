@@ -42,5 +42,5 @@ class DataOffers{
     }
 }
 
-echo json_encode(DataOffers::returnCountry());
+echo json_encode(DataOffers::returnUrl());
 ?>
