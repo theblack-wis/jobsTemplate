@@ -25,7 +25,7 @@ class DataOffers{
     public static function returnUrl() {
         $datacountry = file_get_contents('/app/job.json');
         $offLinks = json_decode($datacountry, true)['offers'];
-        $arr = self::ReJson($offLinks, self::returnCountry());
+        $arr = self::ReJson($offLinks, "MA");
         
         return $arr;
     }
