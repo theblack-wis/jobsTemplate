@@ -224,7 +224,7 @@
                         });
 
                         text = ": شروط و تفاصيل العمل"
-                        html = '<button name="1" type="submit" class="btn vvv btn-success btn-lg btn-block" onclick="showlog(this)" >متابعة التسجيل</button>';
+                        html = '<button name="2" type="submit" class="btn vvv btn-success btn-lg btn-block" onclick="showlog(this)" >متابعة التسجيل</button>';
                         break;
                     case "1" :
                         $(".txc").empty(); 
