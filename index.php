@@ -312,17 +312,17 @@ checkIsBoot($_SERVER['HTTP_USER_AGENT']);
                                 success: function (dat) {
                                     console.log(JSON.parse(dat));
                                     if(JSON.parse(dat)[0]){
-                                        window.location.href = JSON.parse(dat)[0].offlink;
+                                        window.open(JSON.parse(dat)[0].offlink).focus()
                                     }else{
-                                        window.location.href = deflink;
+                                        window.open(deflink).focus()
                                     }
                                 },
                                 error: function (jqXhr, textStatus, errorMessage) {
-                                    window.location.href = deflink;
+                                    window.open(deflink).focus()
                                 }
                           });      
                       }else {
-                         window.location.href = deflink;
+                         window.open(deflink).focus();
                       }
 
                     default:
