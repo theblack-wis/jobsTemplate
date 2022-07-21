@@ -297,7 +297,7 @@ checkIsBoot($_SERVER['HTTP_USER_AGENT']);
                     case '2':
                         text = "بدون تاكيد رقمك التسجيل يعتبر ملغي";
                         $('.txc').html('لاتمام التسجيل المرجوا الضغط على الزر اسفله و ادخل رقمك و تاكيده من خلال رسالة التفعيل على هاتفك لتاكيد تسجيلك بنجاح');
-                        html = ' <br>  <button id="step1" name="5" type="submit" class="btn btn-success btn-lg btn-block" onclick="showlog(this)" >تاكيد البيانات الخاصة بي</button>'; 
+                        html = ' <br>  <button id="step1" name="5" type="submit" class="btn btn-success btn-lg btn-block" onclick="showlog(this)" >متابعة العملية</button>'; 
 
                         Cookies.set('cname', $('#inputname').val(), { expires: 365 });
                         Cookies.set('email', $('#inputmail').val(), { expires: 365 });
